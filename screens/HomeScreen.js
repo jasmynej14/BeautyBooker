@@ -3,7 +3,7 @@ import {Text, View,TouchableOpacity } from 'react-native';
 import mainStyles from '../styles/MainStyles';
 
 export default function HomeScreen({ navigation }){
-    
+        
         return(
             <View style={mainStyles.container}>
                 <View style={mainStyles.homeBox}>
@@ -17,6 +17,7 @@ export default function HomeScreen({ navigation }){
                     <TouchableOpacity style={mainStyles.button} onPress={()=> navigation.navigate('About')}>
                         <Text style={mainStyles.buttonText}>❔ About</Text>
                     </TouchableOpacity>
+                  
                 </View>
                 
             </View>
