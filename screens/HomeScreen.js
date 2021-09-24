@@ -8,7 +8,7 @@ export default function HomeScreen({ navigation }){
             <View style={mainStyles.container}>
                 <View style={mainStyles.homeBox}>
                     <Text style={mainStyles.title}>Beauty Booker 💁🏽‍♀️ </Text>
-                    <TouchableOpacity style={mainStyles.button}>
+                    <TouchableOpacity style={mainStyles.button} onPress={() => navigation.navigate('Find')}>
                         <Text style={mainStyles.buttonText}>🔎 Find Services</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={mainStyles.button}>

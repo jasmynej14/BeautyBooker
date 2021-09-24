@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
+import FindServices from './screens/FindServices';
 const Stack = createNativeStackNavigator()
 export default function App() {
   return (
@@ -13,13 +14,21 @@ export default function App() {
         <Stack.Screen name="Home" 
           component={HomeScreen}
           options={{
-            title: "Beauty Booker 💁🏽‍♀️",
+            title: "Beauty Booker Home 💁🏽‍♀️",
             headerStyle:{
               backgroundColor:'#FAE374',
             }
           }}
         />
         <Stack.Screen name="About" component={AboutScreen}/>
+        <Stack.Screen name="Find" component={FindServices}
+          options={{
+              title:"Find Services 🔎",
+              headerStyle:{
+                backgroundColor:'#FAE374'
+              }
+            }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
